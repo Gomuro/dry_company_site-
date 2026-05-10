@@ -1,6 +1,7 @@
 export const brand = {
-  name: "Secado Costa del Sol",
-  tagline: "Deshumidificación profesional tras inundaciones — Málaga y provincia",
+  name: "HomeSavior",
+  tagline:
+    "Deshumidificación profesional tras inundaciones — Málaga y provincia",
 };
 
 export const navLinks = [{ href: "#servicios", label: "Servicios" }] as const;

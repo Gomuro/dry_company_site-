@@ -1,0 +1,172 @@
+{
+  "Metadata": {
+    "titleTemplate": "{title} · HomeSavior",
+    "defaultTitle": "HomeSavior · Professional drying after flooding in Málaga",
+    "defaultDescription": "Professional dehumidification after water damage — Málaga and Costa del Sol",
+    "openGraphLocale": "en_GB",
+    "homeTitle": "HomeSavior · Flooding and moisture response in Málaga",
+    "homeDescription": "Professional dehumidification after water damage — Málaga province and Costa del Sol",
+    "serviceEmergencyTitle": "Emergency response: extraction and containment",
+    "serviceEmergencyDescription": "Rapid response to stop moisture spread, isolate critical areas, and limit damage across Málaga and the Costa del Sol.",
+    "serviceDryingTitle": "Industrial dehumidification and monitoring",
+    "serviceDryingDescription": "Controlled drying with high‑capacity equipment and moisture logging for insurers and communities in Málaga."
+  },
+  "brand": {
+    "name": "HomeSavior",
+    "tagline": "Professional dehumidification after water damage — Málaga and Costa del Sol"
+  },
+  "nav": {
+    "aria": "Main",
+    "services": "Services",
+    "contact": "Contact",
+    "home": "Home",
+    "problem": "Problem",
+    "solution": "Solution",
+    "process": "Process"
+  },
+  "LocaleSwitcher": {
+    "label": "Language",
+    "toEn": "English",
+    "toEs": "Español"
+  },
+  "hero": {
+    "kicker": "Málaga · Costa del Sol",
+    "title": "Get your space back with industrial dehumidification",
+    "subtitle": "Fast response in Málaga city and Costa del Sol. Moisture monitoring, water removal, and controlled drying to prevent mould and structural damage.",
+    "primaryCta": "Request guidance",
+    "secondaryCta": "See solutions",
+    "badge1": "24–48 h in-area",
+    "badge2": "No obligation",
+    "badge3": "Clear pricing",
+    "imageAlt": "Industrial HVAC and drying equipment on site"
+  },
+  "problem": {
+    "id": "problem",
+    "heading": "The problem is not only what you can see",
+    "intro": "After a leak, burst pipe, or heavy rain, moisture hides in walls, floors, and voids. Without measured drying, odours, mould, and structural risks follow.",
+    "point1": "Residual moisture keeps moving even when surfaces look dry.",
+    "point2": "Mould and condensation often appear late, after damage has stacked up.",
+    "point3": "On the coast, salt air and climate can extend drying time without the right equipment."
+  },
+  "solution": {
+    "id": "solution",
+    "heading": "The solution: professional, measurable drying",
+    "intro": "We combine two complementary tracks: stop damage early, then dry with technical control until readings stabilise.",
+    "cardEmergencyTitle": "Emergency response",
+    "cardEmergencyBody": "Extraction and containment to cut moisture pathways and protect joinery, insulation, and finishes.",
+    "cardEmergencyCta": "View details",
+    "cardDryingTitle": "Industrial dehumidification",
+    "cardDryingBody": "High‑performance equipment, airflow planning, and moisture logging for accountable drying.",
+    "cardDryingCta": "View details",
+    "imageEmergencyAlt": "Water intrusion and moisture control on site",
+    "imageDryingAlt": "Technician checking installations after a leak"
+  },
+  "process": {
+    "id": "process",
+    "heading": "How we work",
+    "intro": "A clear path from first contact to equipment removal.",
+    "step1Title": "Contact and triage",
+    "step1Body": "We capture context, urgency, and risks (power, active leaks).",
+    "step2Title": "Survey and plan",
+    "step2Body": "We assess critical areas and define kit, timelines, and humidity targets.",
+    "step3Title": "Set‑up and containment",
+    "step3Body": "We install equipment, isolate zones, and baseline the readings.",
+    "step4Title": "Monitoring",
+    "step4Body": "We adjust the programme using live data to protect materials.",
+    "step5Title": "Handover and removal",
+    "step5Body": "We review progress, strike kit, and clarify next steps."
+  },
+  "whyUs": {
+    "heading": "Why work with us",
+    "point1Title": "Local experience",
+    "point1Body": "We know typical buildings in the province and coastal humidity challenges.",
+    "point2Title": "Evidence‑led",
+    "point2Body": "Decisions grounded in moisture data, not guesses from looks alone.",
+    "point3Title": "Direct communication",
+    "point3Body": "A single point of contact from survey through equipment removal."
+  },
+  "contact": {
+    "id": "contact",
+    "heading": "Tell us what happened",
+    "intro": "Share your details and we will outline next steps (no obligation). We reply on business days.",
+    "bullet1": "No spam — only follow‑up for this request.",
+    "bullet2": "If it is urgent, note electrical risk or active leaks.",
+    "whatsappCta": "WhatsApp",
+    "channelsIntro": "You can also reach us on:"
+  },
+  "contactForm": {
+    "name": "Full name",
+    "phone": "Phone",
+    "email": "Email",
+    "city": "City or area (e.g. Málaga centro, Torremolinos)",
+    "message": "What happened? (leak, pipe, rain…)",
+    "consent": "I agree my details are used only to respond to this request, in line with EU data protection rules.",
+    "submit": "Send request",
+    "submitting": "Sending…",
+    "another": "Send another request",
+    "successTitle": "Request sent"
+  },
+  "footer": {
+    "line1": "© {year} HomeSavior. Informational service for enquiries in the province of Málaga.",
+    "line2": "This site does not replace reading contract terms or expert reports."
+  },
+  "social": {
+    "whatsapp": "WhatsApp",
+    "instagram": "Instagram",
+    "facebook": "Facebook"
+  },
+  "whatsappPrefill": "Hello — I would like guidance on dehumidification in Málaga.",
+  "successMessage": "Thank you — we have received your message and will get back to you as soon as possible.",
+  "serviceEmergency": {
+    "lead": "Service",
+    "title": "Emergency response: extraction and containment",
+    "intro": "We prioritise cutting the moisture source and isolating critical areas to limit damage to joinery and insulation before it spreads.",
+    "point1Title": "Extraction and containment",
+    "point1Body": "We reduce free water and stabilise the workspace safely.",
+    "point2Title": "Protecting sensitive areas",
+    "point2Body": "We isolate rooms or runs to focus drying and shield finishes.",
+    "point3Title": "Handover to the next phase",
+    "point3Body": "We clarify what to watch for and when industrial dehumidification may be needed.",
+    "ctaTitle": "Dealing with an active or recent leak?",
+    "ctaBody": "Message us and we will guide you on response steps and equipment.",
+    "ctaButton": "Go to contact",
+    "whatsappButton": "WhatsApp"
+  },
+  "serviceDrying": {
+    "lead": "Service",
+    "title": "Industrial dehumidification and monitoring",
+    "intro": "We pair high‑capacity machines with careful airflow so structures dry without overheating materials.",
+    "point1Title": "Industrial dehumidification",
+    "point1Body": "Sized for volume and typical coastal construction.",
+    "point2Title": "Monitoring and documentation",
+    "point2Body": "Dew point and RH logs to evidence drying progress.",
+    "point3Title": "Controlled closure",
+    "point3Body": "We adjust timing on readings, not only on a fixed schedule.",
+    "ctaTitle": "Need a documented drying plan?",
+    "ctaBody": "Ask for guidance and we will propose the right programme and follow‑up.",
+    "ctaButton": "Go to contact",
+    "whatsappButton": "WhatsApp"
+  },
+  "schema": {
+    "serviceType": "Dehumidification and drying after flooding",
+    "areaServed": "Province of Málaga"
+  },
+  "Validation": {
+    "nameRequired": "Please enter your name",
+    "nameMin": "Name is too short",
+    "nameMax": "Name is too long",
+    "phoneRequired": "Please enter a phone number",
+    "phoneMin": "Invalid phone number",
+    "phoneMax": "Invalid phone number",
+    "emailRequired": "Please enter an email",
+    "emailInvalid": "Invalid email",
+    "emailMax": "Invalid email",
+    "cityRequired": "Please enter city or area",
+    "cityMin": "City or area is too short",
+    "cityMax": "City or area is too long",
+    "messageRequired": "Please describe the issue briefly",
+    "messageMin": "Please add a little more detail",
+    "messageMax": "Message is too long",
+    "consentRequired": "You must accept the data notice"
+  }
+}

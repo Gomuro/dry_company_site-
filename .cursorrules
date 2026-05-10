@@ -1,0 +1,28 @@
+# Project rules — DRY, KISS, SOLID
+
+Prioritize simple solutions, avoid unnecessary duplication, and apply SOLID pragmatically in this Next.js / React codebase.
+
+## DRY (Don’t Repeat Yourself)
+
+- Single source of truth for business rules, constants, shared types, and copy that must stay in sync.
+- Extract real duplication into shared modules (`lib/`), hooks, or small utilities instead of copy-paste.
+- Do not introduce abstractions for two nearly identical lines—balance with KISS.
+
+## KISS (Keep It Simple)
+
+- Prefer the smallest change that meets the requirement.
+- Avoid extra layers, patterns, or “future architecture” without a clear need.
+- Keep diffs focused: do not expand scope or refactor unrelated code unless asked.
+
+## SOLID (practical for React / Next)
+
+- **S** — One main responsibility per component or module; separate UI, data fetching, and side effects when it improves clarity.
+- **O** — Extend behavior via composition and props rather than growing a single component with endless conditionals (use judgment).
+- **L** — Substitutable pieces respect the same contracts: predictable props, stable behavior for callers.
+- **I** — Narrow props and interfaces; consumers should not depend on fields or APIs they do not use.
+- **D** — Depend on abstractions where it pays off (thin facades in `lib/`, injectable behavior), not on concrete details everywhere.
+
+## Together
+
+- Do not spread the same logic across files via copy-paste; also do not over-engineer for theory alone.
+- Match existing project patterns, naming, and structure; favor readable UI and maintainable boundaries.

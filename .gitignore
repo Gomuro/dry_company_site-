@@ -12,8 +12,12 @@ node_modules
 /.next/
 /out/
 
+# editor local history (timestamped file copies — Cursor / VS Code)
+.history/
+
 # misc
 .DS_Store
 *.pem
 npm-debug.log*
 .env*.local
+.vercel

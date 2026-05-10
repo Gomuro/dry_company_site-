@@ -1,5 +1,6 @@
-import Link from "next/link";
 import type { ButtonHTMLAttributes, ReactNode } from "react";
+
+import { Link as LocalizedLink } from "@/i18n/navigation";
 
 type Variant = "primary" | "secondary" | "ghost";
 
@@ -18,6 +19,14 @@ type ButtonProps = ButtonHTMLAttributes<HTMLButtonElement> & {
   children: ReactNode;
 };
 
+function isExternalHref(href: string): boolean {
+  return (
+    href.startsWith("http://") ||
+    href.startsWith("https://") ||
+    href.startsWith("mailto:")
+  );
+}
+
 export function Button({
   variant = "primary",
   href,
@@ -29,10 +38,34 @@ export function Button({
   const cls = `inline-flex items-center justify-center rounded-full px-5 py-2.5 text-sm font-semibold transition ${variants[variant]} ${className}`;
 
   if (href) {
+    if (href.startsWith("#")) {
+      return (
+        <a href={href} className={cls}>
+          {children}
+        </a>
+      );
+    }
+    if (isExternalHref(href)) {
+      return (
+        <a
+          href={href}
+          className={cls}
+          rel="noopener noreferrer"
+          target={
+            href.startsWith("http://") || href.startsWith("https://")
+              ? "_blank"
+              : undefined
+          }
+        >
+          {children}
+        </a>
+      );
+    }
+
     return (
-      <Link href={href} className={cls}>
+      <LocalizedLink href={href as "/" | "/services/emergency-response" | "/services/industrial-drying"} className={cls}>
         {children}
-      </Link>
+      </LocalizedLink>
     );
   }
 

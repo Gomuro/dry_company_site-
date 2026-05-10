@@ -2,8 +2,6 @@
 
 import { submitLead, type ContactFormState } from "@/lib/leads/submitLead";
 
-export type { ContactFormState };
-
 export async function submitContact(
   _prevState: ContactFormState,
   formData: FormData,

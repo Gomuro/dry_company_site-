@@ -1,0 +1,172 @@
+{
+  "Metadata": {
+    "titleTemplate": "{title} · HomeSavior",
+    "defaultTitle": "HomeSavior · Deshumidificación tras inundaciones en Málaga",
+    "defaultDescription": "Deshumidificación profesional tras inundaciones — Málaga y provincia",
+    "openGraphLocale": "es_ES",
+    "homeTitle": "HomeSavior · Deshumidificación tras inundaciones en Málaga",
+    "homeDescription": "Deshumidificación profesional tras inundaciones — Málaga y provincia",
+    "serviceEmergencyTitle": "Intervención urgente: extracción y contención",
+    "serviceEmergencyDescription": "Respuesta rápida para cortar el foco de humedad, aislar zonas críticas y limitar daños en Málaga y Costa del Sol.",
+    "serviceDryingTitle": "Deshumidificación industrial y monitorización",
+    "serviceDryingDescription": "Secado controlado con equipos de alto rendimiento y registro de humedad para seguros y comunidades en Málaga."
+  },
+  "brand": {
+    "name": "HomeSavior",
+    "tagline": "Deshumidificación profesional tras inundaciones — Málaga y provincia"
+  },
+  "nav": {
+    "aria": "Principal",
+    "services": "Servicios",
+    "contact": "Contacto",
+    "home": "Inicio",
+    "problem": "Problema",
+    "solution": "Solución",
+    "process": "Proceso"
+  },
+  "LocaleSwitcher": {
+    "label": "Idioma",
+    "toEn": "English",
+    "toEs": "Español"
+  },
+  "hero": {
+    "kicker": "Málaga · Costa del Sol",
+    "title": "Recupera tu espacio con equipos de deshumidificación industriales",
+    "subtitle": "Respuesta rápida en Málaga capital y Costa del Sol. Monitorización de humedad, extracción del agua y secado controlado para evitar moho y daños estructurales.",
+    "primaryCta": "Pedir asesoramiento",
+    "secondaryCta": "Ver soluciones",
+    "badge1": "24–48 h en zona",
+    "badge2": "Sin compromiso",
+    "badge3": "Presupuesto claro",
+    "imageAlt": "Equipo industrial de climatización y secado en obra"
+  },
+  "problem": {
+    "id": "problem",
+    "heading": "El problema no es solo el agua visible",
+    "intro": "Tras una filtración, rotura de tubería o lluvia intensa, la humedad se acumula en paramentos, suelos y huecos técnicos. Sin un secado medido, aparecen olores, moho y riesgos para la estructura y la salubridad.",
+    "point1": "La humedad residual sigue migrando aunque la superficie parezca seca.",
+    "point2": "Moho y condensación suelen manifestarse con retraso, cuando ya hay daño acumulado.",
+    "point3": "En la costa, la salinidad y el clima pueden alargar el tiempo de secado sin el equipo adecuado."
+  },
+  "solution": {
+    "id": "solution",
+    "heading": "La solución: respuesta profesional y medible",
+    "intro": "Trabajamos con dos líneas de servicio complementarias: contener el daño al inicio y secar con control técnico hasta estabilizar la vivienda o el local.",
+    "cardEmergencyTitle": "Intervención urgente",
+    "cardEmergencyBody": "Extracción y contención para cortar la humedad y proteger carpintería, aislamientos y zonas sensibles.",
+    "cardEmergencyCta": "Ver detalle",
+    "cardDryingTitle": "Deshumidificación industrial",
+    "cardDryingBody": "Equipos de alto rendimiento, distribución del aire y monitorización para un secado documentable.",
+    "cardDryingCta": "Ver detalle",
+    "imageEmergencyAlt": "Filtración de agua y control de humedad",
+    "imageDryingAlt": "Profesional revisando instalaciones tras una avería"
+  },
+  "process": {
+    "id": "process",
+    "heading": "Cómo trabajamos",
+    "intro": "Un proceso claro desde el primer contacto hasta el retirado del equipo.",
+    "step1Title": "Contacto y priorización",
+    "step1Body": "Recogemos datos, urgencia y riesgos (electricidad, goteras activas).",
+    "step2Title": "Visita y plan",
+    "step2Body": "Evaluamos puntos críticos y definimos equipos, tiempos y objetivos de humedad.",
+    "step3Title": "Instalación y contención",
+    "step3Body": "Colocamos maquinaria, aislamos zonas y documentamos el punto de partida.",
+    "step4Title": "Monitorización",
+    "step4Body": "Seguimos lecturas para ajustar el secado de forma segura para los materiales.",
+    "step5Title": "Cierre y retirada",
+    "step5Body": "Validamos la evolución, retiramos equipos y dejamos el siguiente paso claro."
+  },
+  "whyUs": {
+    "heading": "Por qué trabajar con nosotros",
+    "point1Title": "Experiencia local",
+    "point1Body": "Conocemos edificaciones típicas de la provincia y los retos de humedad costera.",
+    "point2Title": "Enfoque medible",
+    "point2Body": "Decisiones basadas en datos de humedad, no solo en aspecto visual.",
+    "point3Title": "Comunicación directa",
+    "point3Body": "Un único interlocutor desde la visita hasta el retirado del equipo."
+  },
+  "contact": {
+    "id": "contact",
+    "heading": "Cuéntanos tu caso",
+    "intro": "Deja tus datos y describimos el siguiente paso (sin compromiso). Respondemos en horario laboral.",
+    "bullet1": "Sin spam: solo seguimiento comercial de esta petición.",
+    "bullet2": "Si es urgente, indica si hay riesgo eléctrico o goteras activas.",
+    "whatsappCta": "WhatsApp",
+    "channelsIntro": "También puedes escribirnos por:"
+  },
+  "contactForm": {
+    "name": "Nombre y apellidos",
+    "phone": "Teléfono",
+    "email": "Email",
+    "city": "Ciudad o zona (ej. Málaga centro, Torremolinos)",
+    "message": "¿Qué ha pasado? (filtración, tubería, lluvia…)",
+    "consent": "Acepto que mis datos se utilicen solo para responder a esta solicitud, según la normativa europea de protección de datos.",
+    "submit": "Enviar solicitud",
+    "submitting": "Enviando…",
+    "another": "Enviar otra solicitud",
+    "successTitle": "Solicitud enviada"
+  },
+  "footer": {
+    "line1": "© {year} HomeSavior. Servicio informativo para solicitudes en la provincia de Málaga.",
+    "line2": "Este sitio no sustituye la lectura de condiciones contractuales ni informes periciales."
+  },
+  "social": {
+    "whatsapp": "WhatsApp",
+    "instagram": "Instagram",
+    "facebook": "Facebook"
+  },
+  "whatsappPrefill": "Hola, quiero asesoramiento sobre deshumidificación en Málaga.",
+  "successMessage": "Gracias. Hemos recibido tu mensaje y te contactaremos lo antes posible.",
+  "serviceEmergency": {
+    "lead": "Servicio",
+    "title": "Intervención urgente: extracción y contención",
+    "intro": "Priorizamos cortar el foco de humedad y aislar zonas críticas para limitar el deterioro de carpintería y aislamiento antes de que el daño se extienda.",
+    "point1Title": "Extracción y contención",
+    "point1Body": "Actuamos para reducir agua libre y estabilizar el entorno de trabajo de forma segura.",
+    "point2Title": "Protección de zonas sensibles",
+    "point2Body": "Aislamos estancias o tramos para concentrar el secado y proteger acabados.",
+    "point3Title": "Coordinación con el siguiente paso",
+    "point3Body": "Dejamos claro qué observar y cuándo encajar deshumidificación industrial si aplica.",
+    "ctaTitle": "¿Tienes una filtración activa o reciente?",
+    "ctaBody": "Escríbenos y te orientamos sobre la intervención y los equipos necesarios.",
+    "ctaButton": "Ir a contacto",
+    "whatsappButton": "WhatsApp"
+  },
+  "serviceDrying": {
+    "lead": "Servicio",
+    "title": "Deshumidificación industrial y monitorización",
+    "intro": "Combinamos máquinas de alto rendimiento con una distribución estratégica del aire para secar estructuras sin sobrecalentar los materiales.",
+    "point1Title": "Deshumidificación industrial",
+    "point1Body": "Capacidad adecuada al volumen y al tipo de construcción costera.",
+    "point2Title": "Monitorización y documentación",
+    "point2Body": "Registro de puntos de rocío y humedad relativa para justificar la evolución del secado.",
+    "point3Title": "Cierre controlado",
+    "point3Body": "Ajustamos tiempos en función de lecturas, no solo por calendario.",
+    "ctaTitle": "¿Necesitas un plan de secado documentable?",
+    "ctaBody": "Solicita asesoramiento y te proponemos el enfoque y el seguimiento adecuados.",
+    "ctaButton": "Ir a contacto",
+    "whatsappButton": "WhatsApp"
+  },
+  "schema": {
+    "serviceType": "Deshumidificación y secado tras inundaciones",
+    "areaServed": "Provincia de Málaga"
+  },
+  "Validation": {
+    "nameRequired": "Indica tu nombre",
+    "nameMin": "El nombre es demasiado corto",
+    "nameMax": "El nombre es demasiado largo",
+    "phoneRequired": "Indica un teléfono",
+    "phoneMin": "Teléfono no válido",
+    "phoneMax": "Teléfono no válido",
+    "emailRequired": "Indica un email",
+    "emailInvalid": "Email no válido",
+    "emailMax": "Email no válido",
+    "cityRequired": "Indica ciudad o zona",
+    "cityMin": "Ciudad o zona demasiado corta",
+    "cityMax": "Ciudad o zona demasiado larga",
+    "messageRequired": "Describe brevemente el problema",
+    "messageMin": "Añade un poco más de detalle",
+    "messageMax": "Mensaje demasiado largo",
+    "consentRequired": "Debes aceptar la política de datos"
+  }
+}

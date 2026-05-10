@@ -1,6 +1,7 @@
 import { ZodError } from "zod";
+import { getTranslations } from "next-intl/server";
 
-import { contactSchema } from "@/lib/validation/contactSchema";
+import { createContactSchema } from "@/lib/validation/contactSchema";
 
 export type ContactFormState =
   | { ok: false; errors?: Record<string, string[]>; message?: string }
@@ -28,9 +29,13 @@ function flattenIssues(error: ZodError): Record<string, string[]> {
 }
 
 /** Validates and accepts a lead. MVP: log only; swap adapter for email/webhook later. */
-export async function submitLead(formData: FormData): Promise<ContactFormState> {
-  const raw = formDataToRecord(formData);
-  const parsed = contactSchema.safeParse(raw);
+export async function submitLead(
+  formData: FormData,
+): Promise<ContactFormState> {
+  const validationT = await getTranslations("Validation");
+  const contactSchema = createContactSchema((key) => validationT(key));
+
+  const parsed = contactSchema.safeParse(formDataToRecord(formData));
 
   if (!parsed.success) {
     return { ok: false, errors: flattenIssues(parsed.error) };
@@ -42,9 +47,9 @@ export async function submitLead(formData: FormData): Promise<ContactFormState> 
 
   // TODO: plug Resend, webhook, or CRM here — keep this function as the single entry point.
 
+  const t = await getTranslations();
   return {
     ok: true,
-    message:
-      "Gracias. Hemos recibido tu mensaje y te contactaremos lo antes posible.",
+    message: t("successMessage"),
   };
 }

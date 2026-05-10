@@ -1,29 +1,32 @@
 import { z } from "zod";
 
-export const contactSchema = z.object({
-  name: z
-    .string({ required_error: "Indica tu nombre" })
-    .min(2, "El nombre es demasiado corto")
-    .max(120, "El nombre es demasiado largo"),
-  phone: z
-    .string({ required_error: "Indica un teléfono" })
-    .min(9, "Teléfono no válido")
-    .max(32, "Teléfono no válido"),
-  email: z
-    .string({ required_error: "Indica un email" })
-    .email("Email no válido")
-    .max(254, "Email no válido"),
-  city: z
-    .string({ required_error: "Indica ciudad o zona" })
-    .min(2, "Ciudad o zona demasiado corta")
-    .max(120, "Ciudad o zona demasiado larga"),
-  message: z
-    .string({ required_error: "Describe brevemente el problema" })
-    .min(10, "Añade un poco más de detalle")
-    .max(4000, "Mensaje demasiado largo"),
-  consent: z.boolean().refine((value) => value === true, {
-    message: "Debes aceptar la política de datos",
-  }),
-});
-
-export type ContactInput = z.infer<typeof contactSchema>;
+/** Build localized Zod schema from Validation message getter (next-intl). */
+export function createContactSchema(
+  t: (key: string, values?: Record<string, string>) => string,
+) {
+  return z.object({
+    name: z
+      .string({ required_error: t("nameRequired") })
+      .min(2, t("nameMin"))
+      .max(120, t("nameMax")),
+    phone: z
+      .string({ required_error: t("phoneRequired") })
+      .min(9, t("phoneMin"))
+      .max(32, t("phoneMax")),
+    email: z
+      .string({ required_error: t("emailRequired") })
+      .email(t("emailInvalid"))
+      .max(254, t("emailMax")),
+    city: z
+      .string({ required_error: t("cityRequired") })
+      .min(2, t("cityMin"))
+      .max(120, t("cityMax")),
+    message: z
+      .string({ required_error: t("messageRequired") })
+      .min(10, t("messageMin"))
+      .max(4000, t("messageMax")),
+    consent: z.boolean().refine((value) => value === true, {
+      message: t("consentRequired"),
+    }),
+  });
+}
