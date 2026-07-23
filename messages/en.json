@@ -38,7 +38,7 @@
     "badge1": "24–48 h in-area",
     "badge2": "No obligation",
     "badge3": "Clear pricing",
-    "imageAlt": "Industrial HVAC and drying equipment on site"
+    "imageAlt": "Technician using Sewerin Aquaphon acoustic leak detection equipment on site"
   },
   "problem": {
     "id": "problem",
@@ -58,8 +58,8 @@
     "cardDryingTitle": "Industrial dehumidification",
     "cardDryingBody": "High‑performance equipment, airflow planning, and moisture logging for accountable drying.",
     "cardDryingCta": "View details",
-    "imageEmergencyAlt": "Water intrusion and moisture control on site",
-    "imageDryingAlt": "Technician checking installations after a leak"
+    "imageEmergencyAlt": "Burst copper pipe elbow from freeze damage",
+    "imageDryingAlt": "FLIR thermal camera showing a cold spot on the floor during moisture survey"
   },
   "process": {
     "id": "process",
@@ -75,6 +75,16 @@
     "step4Body": "We adjust the programme using live data to protect materials.",
     "step5Title": "Handover and removal",
     "step5Body": "We review progress, strike kit, and clarify next steps."
+  },
+  "trustGallery": {
+    "heading": "On site — real equipment and diagnostics",
+    "intro": "Examples of how we locate moisture, document conditions, and plan the next step.",
+    "image1Alt": "Laserliner inspection camera showing an internal pipe view",
+    "image2Alt": "Insulated plumbing pipes exposed in a tiled wall cavity",
+    "image3Alt": "Wall with peeled finish from long-term moisture damage",
+    "image4Alt": "Shower installation with exposed drain and wall plumbing",
+    "image5Alt": "FLIR thermal imaging on a smartphone showing a cold spot",
+    "image6Alt": "Technician with Sewerin Aquaphon acoustic leak detector on a ladder"
   },
   "whyUs": {
     "heading": "Why work with us",
@@ -119,6 +129,7 @@
   "successMessage": "Thank you — we have received your message and will get back to you as soon as possible.",
   "serviceEmergency": {
     "lead": "Service",
+    "heroImageAlt": "Burst copper pipe elbow from freeze damage",
     "title": "Emergency response: extraction and containment",
     "intro": "We prioritise cutting the moisture source and isolating critical areas to limit damage to joinery and insulation before it spreads.",
     "point1Title": "Extraction and containment",
@@ -134,6 +145,7 @@
   },
   "serviceDrying": {
     "lead": "Service",
+    "heroImageAlt": "FLIR thermal camera showing a cold spot on the floor during moisture survey",
     "title": "Industrial dehumidification and monitoring",
     "intro": "We pair high‑capacity machines with careful airflow so structures dry without overheating materials.",
     "point1Title": "Industrial dehumidification",

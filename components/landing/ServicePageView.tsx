@@ -1,8 +1,10 @@
+import Image from "next/image";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
 
 import { getPathname } from "@/i18n/navigation";
 import { routing } from "@/i18n/routing";
+import { SERVICE_IMAGES } from "@/lib/content/media";
 import { getWhatsAppHref, hasWhatsApp } from "@/lib/social";
 
 import { ContactSection } from "@/components/landing/ContactSection";
@@ -53,13 +55,24 @@ export async function ServicePageView({ locale, ns }: ServicePageViewProps) {
     { title: t("point3Title"), body: t("point3Body") },
   ];
 
+  const heroImage =
+    ns === "serviceEmergency" ? SERVICE_IMAGES.emergency : SERVICE_IMAGES.drying;
+
   return (
     <>
       <SiteHeader />
       <main id="top">
-        <div className="relative isolate overflow-hidden bg-slate-950">
+        <div className="relative isolate min-h-[280px] overflow-hidden bg-slate-950 sm:min-h-[320px]">
+          <Image
+            src={heroImage.src}
+            alt={t("heroImageAlt")}
+            fill
+            priority={ns === "serviceEmergency"}
+            sizes="100vw"
+            className="object-cover opacity-50"
+          />
           <div
-            className="absolute inset-0 bg-gradient-to-br from-slate-950/95 via-slate-950/80 to-cyan-950/60"
+            className="absolute inset-0 bg-gradient-to-br from-slate-950/90 via-slate-950/75 to-cyan-950/55"
             aria-hidden
           />
           <div className="relative mx-auto max-w-6xl px-4 py-20 sm:px-6 lg:px-8 lg:py-28">

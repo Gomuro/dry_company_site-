@@ -5,7 +5,7 @@ import { getMessages, getTranslations, setRequestLocale } from "next-intl/server
 import type { ReactNode } from "react";
 import { notFound } from "next/navigation";
 
-import { HERO_IMAGE } from "@/lib/content/media";
+import { absoluteImageUrl, HERO_IMAGE } from "@/lib/content/media";
 import { routing } from "@/i18n/routing";
 import { getSiteUrl } from "@/lib/site-url";
 
@@ -29,8 +29,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   const t = await getTranslations({ locale, namespace: "Metadata" });
   const tBrand = await getTranslations({ locale, namespace: "brand" });
+  const tHero = await getTranslations({ locale, namespace: "hero" });
   const siteName = tBrand("name");
   const siteUrl = getSiteUrl().replace(/\/$/, "");
+  const heroOgUrl = absoluteImageUrl(HERO_IMAGE.src);
 
   return {
     metadataBase: new URL(siteUrl),
@@ -45,19 +47,16 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       locale: locale === "es" ? "es_ES" : "en_GB",
       images: [
         {
-          url: HERO_IMAGE.src,
-          width: 1920,
-          height: 1080,
-          alt:
-            locale === "es"
-              ? HERO_IMAGE.alt
-              : "Industrial drying equipment on site",
+          url: heroOgUrl,
+          width: HERO_IMAGE.width,
+          height: HERO_IMAGE.height,
+          alt: tHero("imageAlt"),
         },
       ],
     },
     twitter: {
       card: "summary_large_image",
-      images: [HERO_IMAGE.src],
+      images: [heroOgUrl],
     },
     robots: {
       index: true,

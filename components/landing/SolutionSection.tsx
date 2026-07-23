@@ -16,7 +16,7 @@ export async function SolutionSection() {
       body: t("cardEmergencyBody"),
       cta: t("cardEmergencyCta"),
       href: "/services/emergency-response" as const,
-      image: SERVICE_IMAGES[0],
+      image: SERVICE_IMAGES.emergency,
       imageAlt: t("imageEmergencyAlt"),
     },
     {
@@ -24,7 +24,7 @@ export async function SolutionSection() {
       body: t("cardDryingBody"),
       cta: t("cardDryingCta"),
       href: "/services/industrial-drying" as const,
-      image: SERVICE_IMAGES[1],
+      image: SERVICE_IMAGES.drying,
       imageAlt: t("imageDryingAlt"),
     },
   ];

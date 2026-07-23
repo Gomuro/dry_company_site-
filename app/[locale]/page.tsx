@@ -7,6 +7,7 @@ import { Hero } from "@/components/landing/Hero";
 import { ProblemSection } from "@/components/landing/ProblemSection";
 import { ProcessSection } from "@/components/landing/ProcessSection";
 import { SolutionSection } from "@/components/landing/SolutionSection";
+import { TrustGallery } from "@/components/landing/TrustGallery";
 import { SiteFooter } from "@/components/landing/SiteFooter";
 import { SiteHeader } from "@/components/landing/SiteHeader";
 import { WhyUs } from "@/components/landing/WhyUs";
@@ -32,6 +33,7 @@ export default async function HomePage({ params }: Props) {
         <ProblemSection />
         <SolutionSection />
         <ProcessSection />
+        <TrustGallery />
         <WhyUs />
         <ContactSection />
       </main>

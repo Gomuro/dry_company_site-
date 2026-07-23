@@ -38,7 +38,7 @@
     "badge1": "24–48 h en zona",
     "badge2": "Sin compromiso",
     "badge3": "Presupuesto claro",
-    "imageAlt": "Equipo industrial de climatización y secado en obra"
+    "imageAlt": "Técnico usando equipo acústico Sewerin Aquaphon para localizar fugas en obra"
   },
   "problem": {
     "id": "problem",
@@ -58,8 +58,8 @@
     "cardDryingTitle": "Deshumidificación industrial",
     "cardDryingBody": "Equipos de alto rendimiento, distribución del aire y monitorización para un secado documentable.",
     "cardDryingCta": "Ver detalle",
-    "imageEmergencyAlt": "Filtración de agua y control de humedad",
-    "imageDryingAlt": "Profesional revisando instalaciones tras una avería"
+    "imageEmergencyAlt": "Codo de tubería de cobre reventado por heladas",
+    "imageDryingAlt": "Cámara térmica FLIR mostrando un punto frío en el suelo durante el estudio de humedad"
   },
   "process": {
     "id": "process",
@@ -75,6 +75,16 @@
     "step4Body": "Seguimos lecturas para ajustar el secado de forma segura para los materiales.",
     "step5Title": "Cierre y retirada",
     "step5Body": "Validamos la evolución, retiramos equipos y dejamos el siguiente paso claro."
+  },
+  "trustGallery": {
+    "heading": "En obra — equipos y diagnóstico reales",
+    "intro": "Ejemplos de cómo localizamos humedad, documentamos el estado y definimos el siguiente paso.",
+    "image1Alt": "Cámara de inspección Laserliner mostrando el interior de una tubería",
+    "image2Alt": "Tuberías aisladas visibles en un hueco abierto en pared alicatada",
+    "image3Alt": "Pared con acabado desprendido por humedad prolongada",
+    "image4Alt": "Instalación de ducha con desagüe y fontanería expuesta en obra",
+    "image5Alt": "Imagen térmica FLIR en smartphone con punto frío visible",
+    "image6Alt": "Técnico con detector acústico Sewerin Aquaphon en escalera"
   },
   "whyUs": {
     "heading": "Por qué trabajar con nosotros",
@@ -119,6 +129,7 @@
   "successMessage": "Gracias. Hemos recibido tu mensaje y te contactaremos lo antes posible.",
   "serviceEmergency": {
     "lead": "Servicio",
+    "heroImageAlt": "Codo de tubería de cobre reventado por heladas",
     "title": "Intervención urgente: extracción y contención",
     "intro": "Priorizamos cortar el foco de humedad y aislar zonas críticas para limitar el deterioro de carpintería y aislamiento antes de que el daño se extienda.",
     "point1Title": "Extracción y contención",
@@ -134,6 +145,7 @@
   },
   "serviceDrying": {
     "lead": "Servicio",
+    "heroImageAlt": "Cámara térmica FLIR mostrando un punto frío en el suelo durante el estudio de humedad",
     "title": "Deshumidificación industrial y monitorización",
     "intro": "Combinamos máquinas de alto rendimiento con una distribución estratégica del aire para secar estructuras sin sobrecalentar los materiales.",
     "point1Title": "Deshumidificación industrial",
