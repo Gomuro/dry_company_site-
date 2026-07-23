@@ -1,5 +1,6 @@
 import { defineConfig } from "sanity";
 import { structureTool } from "sanity/structure";
+import { ukUALocale } from "@sanity/locale-uk-ua";
 import { schemaTypes } from "./sanity/schemaTypes";
 
 const projectId = process.env.NEXT_PUBLIC_SANITY_PROJECT_ID || "7pbe7nrp";
@@ -8,10 +9,10 @@ const dataset = process.env.NEXT_PUBLIC_SANITY_DATASET || "production";
 export default defineConfig({
   basePath: "/studio",
   name: "DRY_Website_Studio",
-  title: "HomeSavior Content Studio",
+  title: "HomeSavior · Адмін-панель",
   projectId,
   dataset,
-  plugins: [structureTool()],
+  plugins: [structureTool(), ukUALocale()],
   schema: {
     types: schemaTypes,
   },

@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@sanity/image-url": "^2.1.1",
+    "@sanity/locale-uk-ua": "^1.1.33",
     "animejs": "^4.4.1",
     "next": "^15.3.2",
     "next-intl": "^4.11.1",
