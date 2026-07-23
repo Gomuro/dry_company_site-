@@ -58,9 +58,9 @@ async function run() {
           en: "See solutions",
         },
         badges: [
-          { es: "24–48 h atención", en: "24–48 h response" },
-          { es: "Sin compromiso", en: "No obligation" },
-          { es: "Presupuesto claro", en: "Clear pricing" },
+          { _key: "b1", es: "24–48 h atención", en: "24–48 h response" },
+          { _key: "b2", es: "Sin compromiso", en: "No obligation" },
+          { _key: "b3", es: "Presupuesto claro", en: "Clear pricing" },
         ],
         heroImage: {
           _type: "image",
@@ -113,26 +113,32 @@ async function run() {
         },
         items: [
           {
+            _key: "item1",
             title: { es: "Tras inundación o rotura de tubería", en: "After flooding or burst pipes" },
             description: { es: "Secado de emergencia de paramentos, suelos y recrecidos.", en: "Emergency drying of floors, walls, and subfloors." },
           },
           {
+            _key: "item2",
             title: { es: "Tras una fuga de agua oculta", en: "After hidden water leaks" },
             description: { es: "Extracción profunda de humedad en capas internas y aislamientos.", en: "Deep moisture extraction from internal layers and insulation." },
           },
           {
+            _key: "item3",
             title: { es: "Tras extinción de incendios", en: "After firefighting water damage" },
             description: { es: "Secado completo tras anegamiento por agua de extinción.", en: "Thorough drying after extensive water suppression." },
           },
           {
+            _key: "item4",
             title: { es: "Tras obras con alta humedad residual", en: "After renovations with high moisture" },
             description: { es: "Aceleración del secado en yesos, morteros y soleras.", en: "Accelerated drying for plasters, screeds, and mortars." },
           },
           {
+            _key: "item5",
             title: { es: "Ante humedad constante en paredes o suelos", en: "Constant dampness in walls or floors" },
             description: { es: "Eliminación de la humedad estructural y estabilización.", en: "Elimination of structural dampness and stabilization." },
           },
           {
+            _key: "item6",
             title: { es: "Si aparece olor a humedad o moho", en: "Appearance of damp odours or mould" },
             description: { es: "Prevención inmediata de la proliferación de esporas de moho.", en: "Immediate containment of mould spore proliferation." },
           },
@@ -148,11 +154,11 @@ async function run() {
           en: "Water trapped inside walls, floors, or insulation does not vanish on its own. In southern Spain, this is critical:",
         },
         points: [
-          { es: "El moho puede comenzar a proliferar en solo 24–48 horas", en: "Mould can begin developing within 24–48 hours" },
-          { es: "Se deterioran el yeso, la madera y el cartón-yeso", en: "Plaster, timber, and drywall deteriorate rapidly" },
-          { es: "Se dañan los sistemas eléctricos y el aislamiento", en: "Electrical systems and insulation suffer damage" },
-          { es: "Aparecen olores persistentes a humedad", en: "Persistent damp odours develop" },
-          { es: "Aumenta el riesgo de reformas de alto coste", en: "Increased risk of costly major renovations" },
+          { _key: "pt1", es: "El moho puede comenzar a proliferar en solo 24–48 horas", en: "Mould can begin developing within 24–48 hours" },
+          { _key: "pt2", es: "Se deterioran el yeso, la madera y el cartón-yeso", en: "Plaster, timber, and drywall deteriorate rapidly" },
+          { _key: "pt3", es: "Se dañan los sistemas eléctricos y el aislamiento", en: "Electrical systems and insulation suffer damage" },
+          { _key: "pt4", es: "Aparecen olores persistentes a humedad", en: "Persistent damp odours develop" },
+          { _key: "pt5", es: "Aumenta el riesgo de reformas de alto coste", en: "Increased risk of costly major renovations" },
         ],
         warningNote: {
           es: "Sin un secado profesional, la humedad queda retenida dentro de los paramentos y destruye el edificio desde el interior.",
@@ -169,10 +175,10 @@ async function run() {
           en: "We deploy industrial dehumidifiers, air movers, and moisture monitoring systems to:",
         },
         features: [
-          { es: "Extraer la humedad del aire y de los materiales", en: "Extract moisture from ambient air and building materials" },
-          { es: "Acelerar el secado natural varias veces", en: "Accelerate natural drying times by several factors" },
-          { es: "Controlar el nivel de humedad en cada fase del proceso", en: "Monitor moisture content at every phase of the process" },
-          { es: "Prevenir eficazmente la formación de moho", en: "Effectively prevent mould and fungal formation" },
+          { _key: "f1", es: "Extraer la humedad del aire y de los materiales", en: "Extract moisture from ambient air and building materials" },
+          { _key: "f2", es: "Acelerar el secado natural varias veces", en: "Accelerate natural drying times by several factors" },
+          { _key: "f3", es: "Controlar el nivel de humedad en cada fase del proceso", en: "Monitor moisture content at every phase of the process" },
+          { _key: "f4", es: "Prevenir eficazmente la formación de moho", en: "Effectively prevent mould and fungal formation" },
         ],
         equipmentNote: {
           es: "La maquinaria se selecciona a medida según la superficie, nivel de anegamiento y tipo de construcción.",
@@ -185,11 +191,11 @@ async function run() {
           en: "Why it is beneficial",
         },
         benefits: [
-          { es: "Reduce el riesgo de reparaciones costosas en el futuro", en: "Reduces the risk of expensive future repairs" },
-          { es: "Protege las estructuras y elementos del edificio", en: "Protects building structural elements and materials" },
-          { es: "Previene la aparición de moho y bacterias", en: "Prevents mould, fungus, and bacterial growth" },
-          { es: "Reduce el tiempo de rehabilitación del inmueble", en: "Shortens overall property recovery timeline" },
-          { es: "Permite controlar con precisión el proceso de secado", en: "Provides precise, documentable control of drying" },
+          { _key: "ben1", es: "Reduce el riesgo de reparaciones costosas en el futuro", en: "Reduces the risk of expensive future repairs" },
+          { _key: "ben2", es: "Protege las estructuras y elementos del edificio", en: "Protects building structural elements and materials" },
+          { _key: "ben3", es: "Previene la aparición de moho y bacterias", en: "Prevents mould, fungus, and bacterial growth" },
+          { _key: "ben4", es: "Reduce el tiempo de rehabilitación del inmueble", en: "Shortens overall property recovery timeline" },
+          { _key: "ben5", es: "Permite controlar con precisión el proceso de secado", en: "Provides precise, documentable control of drying" },
         ],
       },
       resultSection: {
@@ -240,9 +246,9 @@ async function run() {
     try { await client.delete("drafts.landingPage"); } catch (e) {}
     try { await client.delete("landingPage"); } catch (e) {}
 
-    console.log("Creating fresh bilingual published document with Elena's updated copy...");
+    console.log("Creating fresh bilingual published document with unique keys...");
     await client.createOrReplace(doc);
-    console.log("Fresh bilingual document published successfully!");
+    console.log("Fresh document with unique keys published successfully!");
   } catch (err) {
     console.error("Error seeding Sanity bilingual document:", err);
   }
