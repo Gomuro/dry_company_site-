@@ -35,116 +35,203 @@ async function run() {
     const doc = {
       _id: "landingPage",
       _type: "landingPage",
-      title: "Головна сторінка лендінгу",
+      title: "Main Landing Page (Bilingual)",
       hero: {
-        kicker: "Андалусія · Коста-дель-Соль",
-        title: "Професійне осушення приміщень",
-        subtitle:
-          "Після затоплень, протікань або прихованих витоків води важливо не лише усунути причину, а й повністю видалити вологу з конструкцій. Ми виконуємо професійне осушення приміщень із використанням спеціалізованого обладнання яке застосовується у сфері аварійного відновлення по всій Європі. Працюємо по всій Андалусії, де теплий клімат значно підвищує ризики швидкого розвитку плісняви та руйнування матеріалів після намокання.",
-        primaryCta: "Замовити консультацію",
-        secondaryCta: "Переглянути послуги",
-        badges: ["24–48 год виїзд", "Без зобов'язань", "Прозорий розрахунок"],
+        kicker: {
+          es: "Málaga · Costa del Sol",
+          en: "Málaga · Costa del Sol",
+        },
+        title: {
+          es: "Recupera tu espacio con equipos de deshumidificación industriales",
+          en: "Get your space back with industrial dehumidification",
+        },
+        subtitle: {
+          es: "Respuesta rápida en Málaga capital y Costa del Sol. Monitorización de humedad, extracción del agua y secado controlado para evitar moho y daños estructurales.",
+          en: "Fast response in Málaga city and Costa del Sol. Moisture monitoring, water removal, and controlled drying to prevent mould and structural damage.",
+        },
+        primaryCta: {
+          es: "Pedir asesoramiento",
+          en: "Request guidance",
+        },
+        secondaryCta: {
+          es: "Ver soluciones",
+          en: "See solutions",
+        },
+        badges: [
+          { es: "24–48 h en zona", en: "24–48 h in-area" },
+          { es: "Sin compromiso", en: "No obligation" },
+          { es: "Presupuesto claro", en: "Clear pricing" },
+        ],
         heroImage: {
           _type: "image",
           asset: { _type: "reference", _ref: heroAssetId },
-          alt: "Професійне обладнання для локалізації витоків вологи",
+          alt: "Técnico usando equipo acústico Sewerin Aquaphon para localizar fugas en obra",
         },
       },
       servicesSection: {
-        heading: "Послуги та технології осушення",
-        intro: "Поєднуємо аварійне видалення вологи з контрольованим сушінням матеріалів.",
-        emergencyCardTitle: "Аварійне усунення витоків",
-        emergencyCardBody: "Негайне вилучення вологи, консервація та захист внутрішніх покриттів і матеріалів.",
+        heading: {
+          es: "La solución: respuesta profesional y medible",
+          en: "The solution: professional, measurable drying",
+        },
+        intro: {
+          es: "Trabajamos con dos líneas de servicio complementarias: contener el daño al inicio y secar con control técnico hasta estabilizar la vivienda o el local.",
+          en: "We combine two complementary tracks: stop damage early, then dry with technical control until readings stabilise.",
+        },
+        emergencyCardTitle: {
+          es: "Intervención urgente",
+          en: "Emergency response",
+        },
+        emergencyCardBody: {
+          es: "Extracción y contención para cortar la humedad y proteger carpintería, aislamientos y zonas sensibles.",
+          en: "Extraction and containment to cut moisture pathways and protect joinery, insulation, and finishes.",
+        },
         emergencyCardImage: {
           _type: "image",
           asset: { _type: "reference", _ref: emergencyAssetId },
         },
-        dryingCardTitle: "Професійне осушення приміщень",
-        dryingCardBody: "Обладнання високої потужності, розрахунок повітряного потоку та фіксація вологості на кожному етапі.",
+        dryingCardTitle: {
+          es: "Deshumidificación industrial",
+          en: "Industrial dehumidification",
+        },
+        dryingCardBody: {
+          es: "Equipos de alto rendimiento, distribución del aire y monitorización para un secado documentable.",
+          en: "High‑performance equipment, airflow planning, and moisture logging for accountable drying.",
+        },
         dryingCardImage: {
           _type: "image",
           asset: { _type: "reference", _ref: dryingAssetId },
         },
       },
       whenNeededSection: {
-        heading: "Коли потрібне осушення",
-        intro: "Основні випадки, коли потрібно негайно видалити вологу з конструкцій:",
+        heading: {
+          es: "El problema no es solo el agua visible",
+          en: "The problem is not only what you can see",
+        },
+        intro: {
+          es: "Tras una filtración, rotura de tubería o lluvia intensa, la humedad se acumula en paramentos, suelos y huecos técnicos. Sin un secado medido, aparecen olores, moho y riesgos para la estructura y la salubridad.",
+          en: "After a leak, burst pipe, or heavy rain, moisture hides in walls, floors, and voids. Without measured drying, odours, mould, and structural risks follow.",
+        },
         items: [
-          { title: "Після затоплення або прориву труби", description: "Аварійне висушування покриттів та стін" },
-          { title: "Після прихованого витоку води", description: "Глибинне видалення вологи з конструкцій" },
-          { title: "Після пожежогасіння (заливання водою)", description: "Повне просушування приміщення" },
-          { title: "Після ремонту з великою кількістю вологи", description: "Прискорення висихання штукатурки та стяжки" },
-          { title: "При постійній сирості у стінах або підлозі", description: "Усунення сирості та стабілізація вологості" },
-          { title: "Якщо з’явився запах вологи або плісняви", description: "Запобігання розвитку грибка та бактерій" },
+          {
+            title: { es: "Humedad acumulada en estructuras", en: "Hidden moisture in structures" },
+            description: { es: "La humedad residual sigue migrating aunque la superficie parezca seca.", en: "Residual moisture keeps moving even when surfaces look dry." },
+          },
+          {
+            title: { es: "Riesgo de moho y condensación", en: "Risk of mould and condensation" },
+            description: { es: "Moho y condensación suelen manifestarse con retraso, cuando ya hay daño acumulado.", en: "Mould and condensation often appear late, after damage has stacked up." },
+          },
+          {
+            title: { es: "Condiciones del clima costero", en: "Coastal humidity challenges" },
+            description: { es: "En la costa, la salinidad y el clima pueden alargar el tiempo de secado sin el equipo adecuado.", en: "On the coast, salt air and climate can extend drying time without the right equipment." },
+          },
         ],
       },
       whyCriticalSection: {
-        heading: "Чому осушення критично важливе",
-        intro: "Вода, яка залишилась у стінах, підлозі або утеплювачі, не зникає сама. У кліматі південної Іспанії це особливо критично:",
+        heading: {
+          es: "Por qué el secado técnico es crítico",
+          en: "Why technical drying is critical",
+        },
+        intro: {
+          es: "El agua atrapada en paramentos y aislamientos destruye los materiales de dentro hacia afuera:",
+          en: "Trapped water inside walls and insulation degrades building elements from within:",
+        },
         points: [
-          "Пліснява може почати розвиватись уже за 24–48 годин",
-          "Руйнуються штукатурка, дерево, гіпсокартон",
-          "Псуються електричні системи та ізоляція",
-          "З’являються стійкі запахи вологи",
-          "Зростає ризик дорогого капітального ремонту",
+          { es: "El moho puede comenzar a proliferar en 24–48 horas", en: "Mould can begin developing within 24–48 hours" },
+          { es: "Deterioro de yeso, madera y cartón-yeso", en: "Damage to plaster, timber, and plasterboard" },
+          { es: "Corrosión en instalaciones eléctricas e insulación", en: "Risk to electrical systems and insulation" },
+          { es: "Olores persistentes a humedad y bacterias", en: "Persistent damp odours and indoor air risks" },
+          { es: "Aumento drástico del coste de rehabilitación", en: "Higher risk of expensive structural repairs" },
         ],
-        warningNote: "Без професійного осушення волога «закривається» всередині конструкцій і поступово руйнує будівлю зсередини.",
+        warningNote: {
+          es: "Sin secado profesional, la humedad queda retenida en las capas internas destruyendo la edificación.",
+          en: "Without professional dehumidification, moisture stays locked inside structures.",
+        },
       },
       howWeWorkSection: {
-        heading: "Як ми працюємо",
-        intro: "Ми застосовуємо професійні осушувачі, вентилятори та системи контролю вологості, які дозволяють:",
+        heading: {
+          es: "Cómo trabajamos",
+          en: "How we work",
+        },
+        intro: {
+          es: "Un proceso claro desde el primer contacto hasta el retirado del equipo.",
+          en: "A clear path from first contact to equipment removal.",
+        },
         features: [
-          "Видалити вологу з повітря та матеріалів",
-          "Прискорити природне висихання у кілька разів",
-          "Контролювати рівень вологості на кожному етапі",
-          "Запобігти утворенню плісняви",
+          { es: "Contacto y priorización inmediata", en: "Contact and immediate triage" },
+          { es: "Visita de diagnóstico y plan de secado", en: "Survey and targeted drying plan" },
+          { es: "Instalación de deshumidificadores y contención", en: "Set-up and containment" },
+          { es: "Monitorización de lecturas de humedad", en: "Data monitoring and adjustments" },
+          { es: "Cierre, informe y retirada de maquinaria", en: "Handover and equipment removal" },
         ],
-        equipmentNote: "Обладнання підбирається індивідуально залежно від площі, рівня затоплення та типу конструкцій.",
+        equipmentNote: {
+          es: "Selección de maquinaria ajustada al volumen, grado de saturación y tipo de paramentos.",
+          en: "Equipment selection tailored to room volume, saturation levels, and substrate types.",
+        },
       },
       whyBeneficialSection: {
-        heading: "Чому це вигідно",
+        heading: {
+          es: "Por qué trabajar con nosotros",
+          en: "Why work with us",
+        },
         benefits: [
-          "Зменшує ризик дорогого ремонту в майбутньому",
-          "Захищає конструкції будівлі",
-          "Запобігає появі плісняви та грибка",
-          "Скорочує час відновлення приміщення",
-          "Дозволяє точно контролювати процес сушіння",
+          { es: "Experiencia local en edificaciones de la provincia", en: "Local experience with provincial building types" },
+          { es: "Enfoque medible basado en lecturas reales", en: "Evidence-led approach grounded in moisture data" },
+          { es: "Comunicación directa сon un único interlocutor", en: "Direct communication with a single contact" },
         ],
       },
       resultSection: {
-        heading: "Результат",
-        text: "Приміщення повністю висушене до безпечного рівня вологості, без прихованої вологи в стінах та підлогах, готове до подальшого ремонту або використання.",
+        heading: {
+          es: "Resultado garantizado",
+          en: "Guaranteed outcome",
+        },
+        text: {
+          es: "Inmueble completamente secado hasta niveles de humedad seguros, listo para habitar o rehabilitar.",
+          en: "Space fully dried to safe humidity thresholds, ready for rebuild or re-occupation.",
+        },
       },
       teamSection: {
         oleksandrPhoto: {
           _type: "image",
           asset: { _type: "reference", _ref: trust6Id },
-          alt: "Олександр Боштега — спеціаліст із виявлення та усунення витоків",
-          caption: "Олександр — оператор спеціалізованого обладнання на об'єкті",
+          alt: "Oleksandr - Técnico especialista en secado",
+          caption: {
+            es: "Oleksandr — Técnico con detector acústico Sewerin Aquaphon",
+            en: "Oleksandr — Technician with Sewerin Aquaphon detector",
+          },
         },
         gallery: [
-          { _type: "image", _key: "img1", asset: { _type: "reference", _ref: trust1Id }, alt: "Інспекційна камера", title: "Контроль труб" },
-          { _type: "image", _key: "img2", asset: { _type: "reference", _ref: trust2Id }, alt: "Відкриті комунікації", title: "Обстеження конструкцій" },
-          { _type: "image", _key: "img3", asset: { _type: "reference", _ref: trust3Id }, alt: "Пошкодження вологою", title: "Оцінка збитків" },
-          { _type: "image", _key: "img4", asset: { _type: "reference", _ref: trust4Id }, alt: "Роботи у санвузлі", title: "Локалізація аварії" },
-          { _type: "image", _key: "img5", asset: { _type: "reference", _ref: trust5Id }, alt: "Тепловізійний аналіз", title: "Тепловізор FLIR" },
-          { _type: "image", _key: "img6", asset: { _type: "reference", _ref: trust6Id }, alt: "Акустична діагностика", title: "Олександр на об'єкті" },
+          { _type: "image", _key: "img1", asset: { _type: "reference", _ref: trust1Id }, alt: "Cámara Laserliner", title: { es: "Inspección Laserliner", en: "Laserliner Inspection" } },
+          { _type: "image", _key: "img2", asset: { _type: "reference", _ref: trust2Id }, alt: "Tuberías expuestas", title: { es: "Tuberías en cavidad", en: "Wall cavity plumbing" } },
+          { _type: "image", _key: "img3", asset: { _type: "reference", _ref: trust3Id }, alt: "Pared con humedad", title: { es: "Daños por humedad", en: "Moisture damage" } },
+          { _type: "image", _key: "img4", asset: { _type: "reference", _ref: trust4Id }, alt: "Ducha en obra", title: { es: "Fontanería expuesta", en: "Shower plumbing" } },
+          { _type: "image", _key: "img5", asset: { _type: "reference", _ref: trust5Id }, alt: "Cámara FLIR", title: { es: "Termografía FLIR", en: "FLIR thermal survey" } },
+          { _type: "image", _key: "img6", asset: { _type: "reference", _ref: trust6Id }, alt: "Técnico en escalera", title: { es: "Oleksandr en obra", en: "Oleksandr on site" } },
         ],
       },
       contactSection: {
-        heading: "Зв'яжіться з нами",
-        intro: "Залиште свої дані або опишіть ситуацію — ми запропонуємо найкраще рішення без зобов'язань.",
+        heading: {
+          es: "Cuéntanos tu caso",
+          en: "Tell us what happened",
+        },
+        intro: {
+          es: "Deja tus datos y describimos el siguiente paso (sin compromiso). Respondemos en horario laboral.",
+          en: "We capture context, urgency, and risks (power, active leaks).",
+        },
         phone: "+34 600 111 222",
         whatsapp: "34600111222",
         email: "info@homesavior.es",
       },
     };
 
-    console.log("Creating/updating Sanity published document...");
+    console.log("Deleting old document versions if present...");
+    try { await client.delete("drafts.landingPage"); } catch (e) {}
+    try { await client.delete("landingPage"); } catch (e) {}
+
+    console.log("Creating fresh bilingual published document...");
     await client.createOrReplace(doc);
-    console.log("Document updated & published successfully!");
+    console.log("Fresh bilingual document published successfully!");
   } catch (err) {
-    console.error("Error seeding Sanity:", err);
+    console.error("Error seeding Sanity bilingual document:", err);
   }
 }
 
