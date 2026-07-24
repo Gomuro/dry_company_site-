@@ -85,6 +85,7 @@ export default async function LocaleLayout({ children, params }: Props) {
 
   return (
     <html lang={locale} suppressHydrationWarning>
+      <link rel="preconnect" href="https://cdn.sanity.io" crossOrigin="anonymous" />
       <body
         suppressHydrationWarning
         className={`${dmSans.variable} bg-white antialiased text-slate-900`}

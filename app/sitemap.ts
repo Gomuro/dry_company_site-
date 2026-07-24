@@ -10,6 +10,9 @@ const internalPaths = [
   "/services/industrial-drying",
 ] as const;
 
+/** Fixed modification date — bump when pages are updated */
+const LAST_MODIFIED = new Date("2026-07-24");
+
 export default function sitemap(): MetadataRoute.Sitemap {
   const base = getSiteUrl().replace(/\/$/, "");
 
@@ -18,11 +21,21 @@ export default function sitemap(): MetadataRoute.Sitemap {
   for (const locale of routing.locales) {
     for (const href of internalPaths) {
       const path = getPathname({ locale, href });
+
+      // Build all language alternates including self-reference
+      const languages: Record<string, string> = {};
+      for (const altLocale of routing.locales) {
+        languages[altLocale] = `${base}${getPathname({ locale: altLocale, href })}`;
+      }
+      // x-default always points to the default locale
+      languages["x-default"] = `${base}${getPathname({ locale: routing.defaultLocale, href })}`;
+
       entries.push({
         url: `${base}${path}`,
-        lastModified: new Date(),
-        changeFrequency: "monthly",
+        lastModified: LAST_MODIFIED,
+        changeFrequency: "monthly" as const,
         priority: href === "/" ? 1 : 0.85,
+        alternates: { languages },
       });
     }
   }

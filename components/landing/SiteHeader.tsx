@@ -1,3 +1,4 @@
+import { headers } from "next/headers";
 import { getTranslations } from "next-intl/server";
 
 import { Link } from "@/i18n/navigation";
@@ -18,6 +19,13 @@ export async function SiteHeader() {
   const processId = tProcess("id");
   const contactId = tContact("id");
 
+  // Detect if we're on a subpage so nav hash links point to home
+  const h = await headers();
+  const pathname = h.get("x-invoke-path") || h.get("x-pathname") || "/";
+  const isSubPage = pathname.includes("/services/");
+
+  const hashPrefix = isSubPage ? "/" : "";
+
   const navItemClass = "hover:text-cyan-700";
 
   return (
@@ -37,18 +45,18 @@ export async function SiteHeader() {
           aria-label={tNav("aria")}
           className="order-3 flex w-full flex-wrap items-center justify-center gap-x-5 gap-y-2 text-sm font-medium text-slate-700 sm:order-none sm:flex-1 sm:justify-end lg:w-auto lg:gap-7"
         >
-          <a className={navItemClass} href={`#${problemId}`}>
+          <a className={navItemClass} href={`${hashPrefix}#${problemId}`}>
             {tNav("problem")}
           </a>
-          <a className={navItemClass} href={`#${solutionId}`}>
+          <a className={navItemClass} href={`${hashPrefix}#${solutionId}`}>
             {tNav("solution")}
           </a>
-          <a className={navItemClass} href={`#${processId}`}>
+          <a className={navItemClass} href={`${hashPrefix}#${processId}`}>
             {tNav("process")}
           </a>
           <LocaleSwitcher />
           <a
-            href={`#${contactId}`}
+            href={`${hashPrefix}#${contactId}`}
             className="rounded-full bg-cyan-600 px-4 py-2 text-white hover:bg-cyan-500"
           >
             {tNav("contact")}
